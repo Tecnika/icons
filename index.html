@@ -3,28 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <title>Распределитель иконок</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="icons.js">
-    <link rel="stylesheet" href="script.js">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+          href="style.css">
+    <link rel="stylesheet"
+          href="icons.js">
 </head>
 
 <body>
-    <div class="search_block container">
-        <div class="icon_visible horisontal">
-            <img src="SVG/ab-testing.svg">
-        </div>
-        <div class="tag_table vertical">
-            <div class="packs group"> 1</div>
-            <div class="metatags group">2 </div>
-            <div class="tags group"> 3</div>
+
+    <input type="file"
+           id="filepicker"
+           name="fileList"
+           webkitdirectory
+           multiple />
+
+    <div class="container_list">
+        <div class="search_block container">
+            <div class="icon_visible horisontal">
+                <img src="SVG/ab-testing.svg">
+            </div>
+            <div class="tag_table vertical">
+                <div class="packs group"> 1</div>
+                <div class="metatags group">2 </div>
+                <div class="tags group"> 3</div>
+            </div>
         </div>
     </div>
     <div class="all_icon container">
         icons
     </div>
 </body>
+<script src="./script.js"></script>
 
 </html>
