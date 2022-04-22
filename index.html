@@ -3,27 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-          content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Распределитель иконок</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-          href="style.css">
-    <link rel="stylesheet"
-          href="icons.js">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons.js">
 </head>
 
 <body>
 
-    <input type="file"
-           id="filepicker"
-           name="fileList"
-           webkitdirectory
-           multiple />
 
     <div class="container_list">
         <div class="search_block container">
@@ -35,12 +24,16 @@
                 <div class="metatags group">2 </div>
                 <div class="tags group"> 3</div>
             </div>
+
         </div>
-    </div>
-    <div class="all_icon container">
-        icons
+        <input type="file" id="filepicker" name="fileList" webkitdirectory multiple />
+        <input id='btn_analysis' type="button" value="Анализ">
+        <div class="all_icon container">
+
+        </div>
     </div>
 </body>
 <script src="./script.js"></script>
+<script src="./start.js"></script>
 
 </html>

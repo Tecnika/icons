@@ -3,12 +3,18 @@ body {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
-    line-height: 17px
+    line-height: 17px;
+    overflow: hidden;
 }
 
 img {
     height: 100%;
     width: 100%;
+}
+
+.img_card {
+    height: 50px;
+    width: 50px;
 }
 
 .container {
@@ -37,6 +43,8 @@ div {
 
 .all_icon {
     flex-wrap: wrap;
+    overflow: auto;
+    align-items: stretch
 }
 
 .icon_visible {
@@ -49,6 +57,25 @@ div {
     flex-grow: 1;
 }
 
+.ïcon_card {
+    width: 150px;
+}
+
+p.pack::before {
+    content: 'Pack:';
+    font-weight: bold;
+}
+
+p.meta::before {
+    content: 'MetaTag:';
+    font-weight: bold;
+}
+
+p.tag::before {
+    content: 'Tag:';
+    font-weight: bold;
+}
+
 .packs {
     background-color: aquamarine;
 }
@@ -59,4 +86,8 @@ div {
 
 .tags {
     background-color: lightcoral;
+}
+
+.name_card {
+    font-weight: bold;
 }
